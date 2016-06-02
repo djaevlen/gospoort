@@ -1,0 +1,110 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "bootstrap/bootstrap",
+        "layout"
+;
+
+
+//== Global rules
+//
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+	margin: 0px;
+	a {}
+
+	
+}
+
+h1, .h1 {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+h2, .h2 {
+	font-size: 46px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h3, .h3 {
+	font-size: 28px;
+	font-weight: 400;
+}
+
+h4, .h4 {
+	font-size: 22px;
+}
+
+h5, .h5 {
+	font-size: 16px;
+	font-weight: 400;	
+}
+
+h6, .h6 {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+p {
+	
+
+}
+
+.white {
+	color: $white;
+}
+
+.blue {
+	color: $blue;
+}
+
+.lightblue {
+	color: $lightblue;
+}
+
+.darkblue {
+	color: $darkblue;
+}
+
+.black {
+	color: $black;
+}
+
+.no-margin {
+	margin: 0px;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+
+	/* on hover */
+	&:hover, &:focus {}
+
+	/* on click */
+	&:active {}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+	}
+}
+
+
+

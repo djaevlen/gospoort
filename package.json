@@ -1,0 +1,19 @@
+{
+  "name": "GoSPOORT",
+  "version": "1.0.0",
+  "repository": "https://github.com/djaevlen/gospoort",
+  "description": "GoSPOORT",
+  "dependencies": {
+ 
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-less": "^3.0.5",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "gulp-watch-less": "^1.0.1"
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="gospoort" class="no-js" lang="">
+    <head>
+
+        <!-- General HEAD -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>GoSPOORT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Scripts -->
+        <script src="/js/dist/main.js"></script>
+
+    </head>
+    <body ng-controller="MainController as main">
+        
+
+        <div ng-include="'views/header.html'"></div>
+
+        <!-- header-title -->
+        <section class="header-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="white">Find Trainers to match your needs</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sub-header-title -->
+        <section class="sub-header-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="lightblue">SEARCH</span> • <span class="black">35 coaches</span> match your search
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- trainers content -->
+        <section class="trainers-content" ng-controller="TrainerController as trainer">
+            <div class="container">
+                <div class="row">
+                    {{trainer}}
+                    <!-- cards -->
+                    <div ng-include="'views/cards.html'"></div>
+                    
+                    <!-- sidebar -->
+                    <div ng-include="'views/sidebar.html'"></div>
+
+                </div>
+            </div>
+        </section>
+        
+        <div ng-include="'views/footer.html'"></div>
+        
+    </body>
+</html>

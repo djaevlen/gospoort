@@ -91,7 +91,7 @@ angular.module('TrainerController', [])
     $scope.viewDetail = function(trainer) {
     	var modalInstance = $uibModal.open({
 			animation: true,
-			templateUrl: '/views/modals/viewTrainerModal.html',
+			templateUrl: 'views/modals/viewTrainerModal.html',
 			controller: 'TrainerModalController',
 			size: 'md',
 			resolve: {

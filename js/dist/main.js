@@ -624,7 +624,7 @@ angular.module('TrainerService', [])
 
     return {
         get: function() {
-            return $http.get('/data/trainers.json');
+            return $http.get('data/trainers.json');
         }
     };
 });

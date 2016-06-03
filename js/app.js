@@ -12,8 +12,9 @@ angular.module('gospoort', [
     // Services
     'TrainerService',
 
+
     // Plugins
-    
+    'ui.bootstrap'
 
 ]).config(function() {
     

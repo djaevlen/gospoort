@@ -39,6 +39,8 @@ var scripts = [
         './js/libs/jquery-1.12.4.min.js',
         './js/libs/modernizr-2.8.3.min.js',
         './js/libs/angular-1.5.5.min.js',
+        './js/libs/ui-bootstrap-tpls-1.3.3.min.js',
+        './js/libs/jquery.mmenu.all.min.js',
     
         // Controllers
         './js/controllers/mainController.js',

@@ -6,6 +6,6 @@ angular.module('MainController', [])
 
 .controller('MainController', function ($scope, $http) {
 
-	this.title = "GoSPOORT";
+	$scope.title = "GoSPOORT";
     
 });

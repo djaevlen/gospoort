@@ -17,49 +17,82 @@
         <script src="/js/dist/main.js"></script>
 
     </head>
-    <body ng-controller="MainController as main">
+    <body ng-controller="MainController">
         
+        <div> <!-- MMENU -->
+        
+            <div ng-include="'views/header.html'"></div>
 
-        <div ng-include="'views/header.html'"></div>
-
-        <!-- header-title -->
-        <section class="header-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 class="white">Find Trainers to match your needs</h1>
+            <!-- header-title -->
+            <section class="header-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 class="white">Find Trainers to match your needs</h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- sub-header-title -->
-        <section class="sub-header-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <span class="lightblue">SEARCH</span> • <span class="black">35 coaches</span> match your search
+            <div class="content" ng-controller="TrainerController">
+                <!-- sub-header-title -->
+                <section class="sub-header-title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" ng-if="selectionDisciplines.length > 0">
+                                <span class="lightblue">SEARCH</span> • <span class="black">{{filtered.length}} coaches</span> match your search
+                            </div>
+                            <div class="col-md-12" ng-if="selectionDisciplines.length === 0">
+                                <span class="lightblue">SEARCH</span> • Use the sidebar to filter trainers 
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- trainers content -->
-        <section class="trainers-content" ng-controller="TrainerController as trainer">
-            <div class="container">
-                <div class="row">
-                    {{trainer}}
-                    <!-- cards -->
-                    <div ng-include="'views/cards.html'"></div>
-                    
-                    <!-- sidebar -->
-                    <div ng-include="'views/sidebar.html'"></div>
+                </section>
+                
+                <!-- trainers content -->
+                <section class="trainers-content">
+                    <div class="container">
+                        <div class="row">
+                            {{trainer}}
+                            <!-- cards -->
+                            <div class="col-md-9 cards">
+                                <div class="row">
+                                    
+                                    <div class="col-md-6 card" ng-repeat="trainer in filtered = ( trainers | filter:filterLocations | filter:filterDisciplines)">
+                                        <div class="inner">
+                                            <div class="wrapper clearfix">
+                                                <div class="image">
+                                                    
+                                                </div>
+                                                <div class="info">
+                                                    <h4>{{trainer.name}}</h4>
+                                                    <h5>
+                                                        <span class="disciplines" ng-repeat="discipline in trainer.discipline">
+                                                            {{discipline}}<span ng-if="!$last">, </span>
+                                                        </span>
+                                                    </h5>
+                                                    <div class="icons clearfix">
+                                                        <div class="pay">${{trainer.pay}}</div>
+                                                        <div class="time">{{trainer.time}}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn" ng-click="viewDetail(trainer)">VIEW DETAILS</button>
+                                        </div>
+                                    </div>
+                                </div>          
+                            </div>
+                            
+                            <!-- sidebar -->
+                            <div ng-include="'views/sidebar.html'"></div>
 
-                </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+            
+            <div ng-include="'views/footer.html'"></div>
         
-        <div ng-include="'views/footer.html'"></div>
-        
+        </div> <!-- MMENU -->
     </body>
 </html>

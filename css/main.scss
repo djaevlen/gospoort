@@ -4,20 +4,33 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+		"mmenu",
         "bootstrap/bootstrap",
-        "layout"
+        "layout",
+        "mobile"
 ;
+
 
 
 //== Global rules
 //
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+html {
+	overflow-y: scroll;
+}
 
+body {
+	// Fixing some weird modal padding
+	padding-right: 0px!important;
+}
+
+.btn:focus, .btn:active {
+	outline: 0!important;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	margin: 0px;
 	a {}
-
-	
 }
 
 h1, .h1 {

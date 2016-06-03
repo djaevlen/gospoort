@@ -20,7 +20,10 @@
     "balance": "$3,517.35", 
     "favoriteDiscipline": "Fitness", 
     "company": "ZOARERE", 
-    "isActive": true
+    "isActive": true,
+    "pay": 31,
+    "time" : "0:25",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -43,7 +46,11 @@
     "balance": "$2,749.72", 
     "favoriteDiscipline": "Balance", 
     "company": "BYTREX", 
-    "isActive": false
+    "isActive": false,
+    "pay": 32,
+    "time" : "1:45",
+    "location" : "Indoor"
+
   }, 
   {
     "discipline": [
@@ -66,7 +73,10 @@
     "balance": "$3,992.14", 
     "favoriteDiscipline": "Power", 
     "company": "EYEWAX", 
-    "isActive": true
+    "isActive": true,
+    "pay": 35,
+    "time" : "3:45",
+    "location" : "Outdoor"
   }, 
   {
     "discipline": [
@@ -89,7 +99,10 @@
     "balance": "$3,166.60", 
     "favoriteDiscipline": "Crossfit", 
     "company": "LUXURIA", 
-    "isActive": true
+    "isActive": true,
+    "pay": 28,
+    "time" : "2:45",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -112,7 +125,10 @@
     "balance": "$1,946.05", 
     "favoriteDiscipline": "Fitness", 
     "company": "EXODOC", 
-    "isActive": false
+    "isActive": false,
+    "pay": 23,
+    "time" : "1:45",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -135,7 +151,10 @@
     "balance": "$2,098.63", 
     "favoriteDiscipline": "Bodybuilding", 
     "company": "ROCKABYE", 
-    "isActive": false
+    "isActive": false,
+    "pay": 19,
+    "time" : "0:25",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -158,7 +177,10 @@
     "balance": "$2,313.03", 
     "favoriteDiscipline": "Core Strength", 
     "company": "POSHOME", 
-    "isActive": false
+    "isActive": false,
+    "pay": 10,
+    "time" : "1:45",
+    "location" : "Outdoor"
   }, 
   {
     "discipline": [
@@ -181,7 +203,10 @@
     "balance": "$2,129.82", 
     "favoriteDiscipline": "Yoga", 
     "company": "EXTRO", 
-    "isActive": false
+    "isActive": false,
+    "pay": 20,
+    "time" : "0:45",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -204,7 +229,10 @@
     "balance": "$2,807.55", 
     "favoriteDiscipline": "Balance", 
     "company": "AQUOAVO", 
-    "isActive": true
+    "isActive": true,
+    "pay": 15,
+    "time" : "1:25",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -227,7 +255,10 @@
     "balance": "$1,759.32", 
     "favoriteDiscipline": "Fitness", 
     "company": "WATERBABY", 
-    "isActive": true
+    "isActive": true,
+    "pay": 20,
+    "time" : "1:45",
+    "location" : "Outdoor"
   }, 
   {
     "discipline": [
@@ -250,7 +281,10 @@
     "balance": "$2,461.88", 
     "favoriteDiscipline": "Crossfit", 
     "company": "TURNLING", 
-    "isActive": true
+    "isActive": true,
+    "pay": 29,
+    "time" : "1:00",
+    "location" : "Outdoor"
   }, 
   {
     "discipline": [
@@ -273,7 +307,10 @@
     "balance": "$2,679.66", 
     "favoriteDiscipline": "Crossfit", 
     "company": "MINGA", 
-    "isActive": false
+    "isActive": false,
+    "pay": 27,
+    "time" : "0:55",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -296,7 +333,10 @@
     "balance": "$2,430.76", 
     "favoriteDiscipline": "Core", 
     "company": "HYDROCOM", 
-    "isActive": false
+    "isActive": false,
+    "pay": 30,
+    "time" : "0:35",
+    "location" : "Outdoor"
   }, 
   {
     "discipline": [
@@ -319,7 +359,10 @@
     "balance": "$1,324.25", 
     "favoriteDiscipline": "Core", 
     "company": "ZILIDIUM", 
-    "isActive": true
+    "isActive": true,
+    "pay": 32,
+    "time" : "1:10",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -342,7 +385,10 @@
     "balance": "$3,813.66", 
     "favoriteDiscipline": "Balance", 
     "company": "XTH", 
-    "isActive": true
+    "isActive": true,
+    "pay": 35,
+    "time" : "1:25",
+    "location" : "Indoor"
   }, 
   {
     "discipline": [
@@ -365,7 +411,10 @@
     "balance": "$3,819.09", 
     "favoriteDiscipline": "Balance", 
     "company": "BIFLEX", 
-    "isActive": true
+    "isActive": true,
+    "pay": 23,
+    "time" : "0:30",
+    "location" : "Outdoor"
   }, 
   {
     "discipline": [
@@ -388,7 +437,10 @@
     "balance": "$3,750.80", 
     "favoriteDiscipline": "Crossfit", 
     "company": "TUBALUM", 
-    "isActive": false
+    "isActive": false,
+    "pay": 34,
+    "time" : "1:45",
+    "location" : "Outdoor"
   }, 
   {
     "discipline": [
@@ -411,6 +463,9 @@
     "balance": "$1,503.70", 
     "favoriteDiscipline": "Balance", 
     "company": "ELEMANTRA", 
-    "isActive": false
+    "isActive": false,
+    "pay": 25,
+    "time" : "0:45",
+    "location" : "Indoor"
   }
 ]

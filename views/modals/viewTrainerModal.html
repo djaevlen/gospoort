@@ -1,0 +1,59 @@
+<div class="modal-body trainer">
+    <div class="card">
+        <div class="inner">
+            <div class="wrapper clearfix">
+                <div class="image">
+                	
+                </div>
+                <div class="info">
+                    <h4>{{trainer.name}}</h4>
+                    <h5>
+                        <span class="disciplines" ng-repeat="discipline in trainer.discipline">
+                            {{discipline}}<span ng-if="!$last">, </span>
+                        </span>
+                    </h5>
+                    <div class="icons clearfix">
+                        <div class="pay">${{trainer.pay}}</div>
+                        <div class="time">{{trainer.time}}</div>
+                    </div>
+                </div>
+                <ul>
+                	
+                	<li>
+                		<strong>About</strong><br>
+                		{{trainer.about}}
+            		</li>
+					
+                	<li>
+                		<strong>Age</strong><br>
+                		{{trainer.age}}
+            		</li>
+                	
+                	<li>
+                		<strong>Phone</strong><br>
+                		{{trainer.phone}}
+            		</li>
+                	
+                	<li>
+                		<strong>Email</strong><br>
+                		{{trainer.email}}
+            		</li>
+                	
+                	<li>
+                		<strong>Company</strong><br>
+                		{{trainer.company}}
+            		</li>
+                	
+                	<li>
+                		<strong>Address</strong><br>
+                		{{trainer.address}}
+            		</li>
+                	
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+</div>

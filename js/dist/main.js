@@ -502,6 +502,8 @@ angular.module('TrainerController', [])
 
 .controller('TrainerController', function ($scope, $http, TrainerService, $uibModal) {
 
+
+	// Varibles ================================================================
   	$scope.title = "Trainers";
   	$scope.trainers = [];
   	$scope.filtered = [];
@@ -524,6 +526,7 @@ angular.module('TrainerController', [])
   		'Indoor'
   	];
 
+  	// Get all trainers ========================================================
   	$scope.getTrainers = function(){
   		TrainerService.get().success(function(data){
   			$scope.trainers = data;
@@ -531,7 +534,7 @@ angular.module('TrainerController', [])
   	};
   	$scope.getTrainers();
   	
-  	// Disciplines
+  	// Disciplines =============================================================
   	$scope.toggleDisciplines = function (discipline) {
     	var idx = $scope.selectionDisciplines.indexOf(discipline);
     	if (idx > -1) {
@@ -555,7 +558,7 @@ angular.module('TrainerController', [])
   		} 
     };
 
-    // Location
+    // Locations ===============================================================
   	$scope.toggleLocations = function (location) {
     	var idx = $scope.selectionLocations.indexOf(location);
     	if (idx > -1) {
@@ -579,6 +582,8 @@ angular.module('TrainerController', [])
   		} 
     };
 
+
+    // View detail about trainer modal =========================================
     $scope.viewDetail = function(trainer) {
     	var modalInstance = $uibModal.open({
 			animation: true,
@@ -647,5 +652,15 @@ angular.module('gospoort', [
 }).run(function($rootScope){
     
     $rootScope.test = "test";
+});
+jQuery(document).ready(function($) {
+	$("#mobile-menu").mmenu({
+	 // Options
+	});
+	var API = $("#mobile-menu").data( "mmenu" );
+
+	$("#mobile-menu-open").click(function() {
+	 	API.open();
+	});
 });
 //# sourceMappingURL=main.js.map

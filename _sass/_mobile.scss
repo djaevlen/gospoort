@@ -48,7 +48,17 @@
 @media screen and (max-width: 1200px) {
 
 	
-
+	section.trainers-content .cards .card .inner {
+	    padding: 15px 30px 10px 15px;
+	    .info {
+	        float: right;
+	        width: 200px;
+	    }
+	    .image {
+	    	width: 70px;
+	    	height: 70px;
+	    }
+	}	
 }
 
 
@@ -60,7 +70,17 @@
 @media screen and (max-width: 1024px) {
 
 	
-			
+		section.trainers-content .cards .card .inner {
+		    padding: 15px 30px 10px 15px;
+		    .info {
+		        float: right;
+		        width: 200px;
+		    }
+		    .image {
+		    	width: 70px;
+		    	height: 70px;
+		    }
+		}	
 
 
 
@@ -72,7 +92,17 @@
 
 @media screen and (max-width: 768px) {
 
-	
+	section.trainers-content .cards .card .inner {
+	    padding: 15px 30px 10px 15px;
+	    .info {
+	        float: right;
+	        width: 200px;
+	    }
+	    .image {
+	    	width: 70px;
+	    	height: 70px;
+	    }
+	}
 
 }
 
@@ -83,7 +113,40 @@
 @media screen and (max-width: 480px) {
 	
 
-	
+	.navbar-toggle {
+	    margin-top: 15px;
+	    margin-bottom: 15px; 
+	}
+	.navbar {
+	    min-height: 50px;
+	}
+	section.header-title h1 {
+	    margin-top: 28px;
+	    font-size: 16px;
+	}
+	section.trainers-content .cards .card .inner {
+	    padding: 15px 30px 10px 15px;
+	    .info {
+	        float: right;
+	        width: 200px;
+	    }
+	    .image {
+	    	width: 70px;
+	    	height: 70px;
+	    }
+	}
+	.modal .trainer .card .inner .info {
+	    float: none;
+	    width: 100%;
+	}
+	.modal .trainer .card .inner .image {
+	    float: none;
+	}
+	.modal .trainer .card .inner {
+	    border-radius: 0px;
+	    height: auto;
+	    padding: 0px 10px 10px 10px;
+	}
 
 
  }
@@ -94,7 +157,28 @@
 
 @media screen and (max-width: 320px) {
 
-	
+	.navbar-toggle {
+	    margin-top: 15px;
+	    margin-bottom: 15px; 
+	}
+	.navbar {
+	    min-height: 50px;
+	}
+	section.header-title h1 {
+	    margin-top: 28px;
+	    font-size: 16px;
+	}
+	section.trainers-content .cards .card .inner {
+	    padding: 15px 30px 10px 15px;
+	    .info {
+	        float: right;
+	        width: 175px;
+	    }
+	    .image {
+	    	width: 50px;
+	    	height: 50px;
+	    }
+	}
 
 
 	

@@ -51,6 +51,9 @@ var scripts = [
         
 
         // App
-        './js/app.js'
+        './js/app.js',
+
+        // Customs scripts
+        './js/custom.js',
 ];
 

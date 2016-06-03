@@ -10,6 +10,7 @@ section.sub-header-title {
 	height: 60px;
 	padding-top: 30px;
 	font-size: 16px;
+	
 }
 
 
@@ -305,7 +306,21 @@ section.trainers-content {
 
 
 footer {
-	margin-top: 50px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	ul {
+		list-style-type: none;
+		li {
+			display: inline-block;
+			margin: 0px 20px;
+			a {
+				color: $grey;
+				&:hover {
+					color: $black;
+				}
+			}
+		}
+	}
 }
 
 
@@ -342,4 +357,7 @@ nav.navbar {
 			}
 		}
 	}
+}
+.mm-listview > li:not(.mm-divider):after {
+    left: 0px;
 }

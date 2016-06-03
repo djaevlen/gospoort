@@ -5,7 +5,6 @@
  **********************************************************************/
 angular.module('gospoort', [
     // Controllers
-    'MainController',
     'TrainerController',
     
     

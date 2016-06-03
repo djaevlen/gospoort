@@ -624,7 +624,6 @@ angular.module('TrainerService', [])
  **********************************************************************/
 angular.module('gospoort', [
     // Controllers
-    'MainController',
     'TrainerController',
     
     
